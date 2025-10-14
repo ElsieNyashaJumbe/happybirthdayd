@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday {{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </head>
+
+  <body>
+    <div class="container birthday">
+      <div class="card birthday-card">
+        <h1 class="cute">Happy 21st Birthday, {{ name }}! 🎂</h1>
+
+        <p class="romantic">
+          To the boy who lights up my heart — Duncan, Comrade, Babe, Mhofu, Love of my Life, Dzaddy,
+          Bamwana, Munhu wangu, Murume wangu, Mudiwa, Mukomana wangu, Benzi rangu, Mbabvu yangu,
+          Smile keeper, Mfero, Jahman, Chommie — I love you and I would love to wish you a happy
+          21st birthday. I pray that God continues to favour you like this and that you continue
+          to grow into the fine, wise, strong, handsome, and loving man you have become.
+        </p>
+
+        <div class="cake">🎂</div>
+
+        <div class="buttons">
+          <a class="btn" href="{{ url_for('message') }}">Birthday Message</a>
+          <a class="btn" href="{{ url_for('memories') }}">Click Me</a>
+        </div>
+
+        <div class="video-note">
+          Click the "Click Me" button to view a video.
+        </div>
+
+        <div class="nav-logout">
+          <a href="{{ url_for('logout') }}">Log out</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

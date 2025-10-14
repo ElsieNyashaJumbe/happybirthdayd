@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #FFF5F7, #F7FBFF);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(20, 20, 40, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #ff6b81;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.small {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.error {
+  background: #ffe6e9;
+  padding: 8px;
+  border-radius: 8px;
+  color: #b3001b;
+  margin-bottom: 10px;
+}
+
+.birthday .birthday-card {
+  text-align: center;
+}
+
+.cute {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.romantic {
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.cake {
+  font-size: 64px;
+  margin: 12px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 18px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  background: #ffd1dc;
+  color: #6b1844;
+  font-weight: 600;
+}
+
+.nav-logout {
+  margin-top: 12px;
+}
+
+.nav-logout a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.message-card .sweet {
+  font-family: 'Satisfy', 'Caveat', cursive;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 20px auto;
+  width: 85%;
+}
+
+/* Gallery / Collage */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.thumb img {
+  width: 120px;       /* reduced width */
+  height: auto;       /* keep full aspect ratio */
+  object-fit: contain; /* show full image */
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(10, 10, 30, 0.06);
+  transition: transform 0.3s;
+}
+
+.thumb img:hover {
+  transform: scale(1.05);
+}
+
+.muted {
+  color: #aaa;
+}
+
+.back a {
+  color: #666;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .buttons {
+    flex-direction: column;
+  }
+}

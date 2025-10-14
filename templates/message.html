@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Birthday Message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card message-card">
+        <h2>My Love, {{ name }} </h2>
+        <p class="sweet">
+          DEAREST GENTLE READER
+          <BR>
+          <br>
+
+          Hey babbeyy, its me, look at you all grown up now, Happy Birthday, Babe. First, I would like to thank the Lord for protecting you and keeping you alive and healthy up until this day. You’ve officially reached the golden age 21 and shining brighter than ever! I’m so proud of the amazing man you’re becoming. It breaks my heart to think of the past birthdays that you had to celebrate without me, but also at the same time l find my self giggling and overjoyed to think of the future birthdays we are gonna celebrate together. To my favorite person in the whole world Happy 21st Birthday. You’re officially legal to do all the things you’ve probably been doing already and I wish I could be there to celebrate, dance, and steal all your attention (and your cake). l know that there is nothing much l can do for you at the moment because of the distance, but l know that things are gonna get better and we will have to celebrate your birthday with more than just words and video calls. Even from miles away, I feel connected to you in every heartbeat. You make distance bearable, days brighter, and love feel effortless. I love you MHOFU, grow in grace.
+          <br>
+          <br>
+
+          HAPPY BIRTHDAY DUNCAN (my love)
+          <br>
+          <br>
+
+          FROM YOUR PRETTIEST PROBLEM
+          <br>
+          <br>
+
+          ELSIE
+          <BR>
+          <BR>
+
+          XOXO
+        </p>
+
+        <p class="back"><a href="{{ url_for('birthday') }}">← Back</a></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HAPPY BIRTHDAY BABE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Happy Birthday🎈</h1>
+        <p class="sub">Enter your birthdate (DDMM) to sign in</p>
+
+        {% if error %}
+          <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post">
+          <input type="password" name="pin" placeholder="Enter PIN - e.g. 2501" required minlength="4" maxlength="6" />
+          <button type="submit">Sign in</button>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
